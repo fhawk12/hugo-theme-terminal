@@ -31,7 +31,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin: 20px 1px;
+  margin: 10px 10px;
 
   @media ($phone) {
     margin: 0;
@@ -47,11 +47,27 @@
 
     > li {
       flex: 0 0 auto;
-      margin-bottom: 10px;
+      margin-bottom: auto auto;
+      padding: 10px;
       white-space: nowrap;
 
       &:not(:last-of-type) {
         margin-right: 20px;
+      }
+      a {
+        color: $text;
+      }
+      &:hover {
+        background-color: $pine;
+        a {
+          color: $highlight;
+          font-weight: bold;
+          text-decoration: none;
+        }
+        a:hover {
+          font-weight: bold;
+          color: $highlight;
+        }
       }
     }
 

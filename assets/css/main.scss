@@ -57,17 +57,23 @@ body {
 }
 
 a {
-  color: inherit;
+  color: unset;
 
   /* Waiting for a better times... */
   /* &:has(code) {
     text-decoration-color: $accent;
   } */
+  text-decoration: none;
+  &:hover {
+    color: $foam;
+    text-decoration: underline;
+  }
 }
 
 img {
   display: block;
   max-width: 100%;
+  border-radius: 4px;
 
   &.left {
     margin-right: auto;

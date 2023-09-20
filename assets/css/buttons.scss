@@ -59,17 +59,21 @@ a.button {
   }
 }
 
-a.read-more,
-a.read-more:hover,
-a.read-more:active {
+a.read-more {
   display: inline-flex;
   border: none;
   color: $accent;
   background: none;
   box-shadow: none;
   padding: 0;
-  margin: 20px 0;
+  // margin: 20px 0;
   max-width: 100%;
+}
+
+a.read-more:active,
+a.read-more:hover {
+  color: $foam;
+  background: none;
 }
 
 .code-toolbar {

@@ -1,68 +1,95 @@
-code.language-css,
-code.language-scss,
-.token.boolean,
-.token.string,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.language-scss .token.string,
-.style .token.string,
-.token.attr-value,
-.token.keyword,
-.token.control,
-.token.directive,
-.token.statement,
-.token.regex,
-.token.atrule,
-.token.number,
-.token.inserted,
-.token.important {
-  color: $accent !important;
+// code.language-css,
+// code.language-scss,
+// .token.boolean,
+// .token.string,
+// .token.entity,
+// .token.url,
+// .language-css .token.string,
+// .language-scss .token.string,
+// .style .token.string,
+// .token.attr-value,
+// .token.keyword,
+// .token.control,
+// .token.directive,
+// .token.statement,
+// .token.regex,
+// .token.atrule,
+// .token.number,
+// .token.inserted,
+// .token.important {
+//   color: $accent !important;
+// }
+//
+// .token.tag-id,
+// .token.atrule-id,
+// .token.operator,
+// .token.unit,
+// .token.placeholder,
+// .token.variable,
+// .token.tag,
+// .token.attr-name,
+// .token.namespace,
+// .token.deleted,
+// .token.property,
+// .token.class-name,
+// .token.constant,
+// .token.symbol {
+//   color: transparentize($accent, .3) !important;
+// }
+//
+// .token.property,
+// .token.function,
+// .token.function-name,
+// .token.deleted,
+// code.language-javascript,
+// code.language-html,
+// .command-line-prompt > span:before {
+//   color: mix($accent, #999, .9) !important;
+// }
+//
+// .token.selector,
+// .token.tag,
+// .token.punctuation {
+//   color: white;
+// }
+//
+// .token.comment,
+// .token.prolog,
+// .token.doctype,
+// .token.cdata {
+//   color: rgba(255, 255, 255, .3) !important;
+// }
+//
+// .token.namespace {
+//   opacity: .7 !important;
+// }
+
+.token.keyword.keyword-new,
+.token.operator {
+  color: $text;
 }
 
-.token.tag-id,
-.token.atrule-id,
-.token.operator,
-.token.unit,
-.token.placeholder,
-.token.variable,
-.token.tag,
-.token.attr-name,
-.token.namespace,
-.token.deleted,
-.token.property,
-.token.class-name,
-.token.constant,
-.token.symbol {
-  color: transparentize($accent, .3) !important;
+.token.function-name {
+  color: $rose;
 }
 
-.token.property,
-.token.function,
-.token.function-name,
-.token.deleted,
-code.language-javascript,
-code.language-html,
-.command-line-prompt > span:before {
-  color: mix($accent, #999, .9) !important;
+.token.class-name {
+  color: $foam;
 }
 
-.token.selector,
-.token.tag,
-.token.punctuation {
-  color: white;
+.token.comment {
+  color: $subtle;
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: rgba(255, 255, 255, .3) !important;
+.token.directive-hash,
+.token.keyword {
+  color: $pine;
 }
 
-.token.namespace {
-  opacity: .7 !important;
+.token.string {
+  color: $green;
 }
+
 
 pre[data-line] {
   position: relative;
@@ -120,7 +147,8 @@ pre[class*="language-"] {
 	position: relative;
 	margin: $code-margin 0;
 	padding: 20px;
-	border: 1px solid rgba(255, 255, 255, .1);
+	border: 2px solid $border-color;
+  border-radius: 10px;
 
 	+ .code-toolbar,
 	+ .highlight,
@@ -131,6 +159,7 @@ pre[class*="language-"] {
 
 	pre, code {
 		border: none;
+    background-color: transparent !important;
 	}
 
 	code {
@@ -141,10 +170,10 @@ pre[class*="language-"] {
   > .toolbar {
     button {
       font-size: .8em !important;
-      background: hsla(0,0%,87.8%,.2) !important;
-      color: #bbb !important;
+      background: $overlay !important;
+      color: $text !important;
       box-shadow: 0 2px 0 0 rgba(0,0,0,.2) !important;
-      border-radius: 0 !important;
+      border-radius: 4px !important;
       margin: 6px !important;
       padding: 10px !important;
       user-select:none
