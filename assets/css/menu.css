@@ -16,7 +16,6 @@
 
 .navigation-menu__inner > li {
   flex: 0 0 auto;
-  margin-bottom: 10px;
   white-space: nowrap;
 }
 
